@@ -1,0 +1,56 @@
+
+.wui-button {
+    background-color:rgb(251,251,251);
+    border-top: 1.34px solid rgb(229,229,229);
+    border-left: 1.34px solid rgb(229,229,229);
+    border-right: 1.34px solid rgb(229,229,229);
+    border-bottom: 1.34px solid rgb(204,204,204);
+    box-shadow:0px 0.05px 0.05px rgb(204,204,204); 
+    outline: none;
+    color:#1a1a1a;
+}
+
+.wui-button:hover {
+    background-color:#F6F6F6;
+    transition: 0.2;
+
+}
+
+.wui-button-small {
+    border-radius: 4px;
+    margin: 2.667px 2.5px;
+    padding: 0px 15px 0px 15px;
+    height:30px;
+    font-size:14px
+}
+.wui-button-long {
+    border-radius: 4px;
+    margin: 2.667px 2.5px;
+    padding: 0px 15px 0px 15px;
+    width:100%;
+    height:30px;
+    font-size:14px
+}
+.wui-button-textarea {
+    border-radius: 4px;
+    margin: 2.667px 2.5px;
+    padding: 3px 15px 3px 15px;
+    
+    font-size:14px
+}
+.wui-button-style{
+    background-color:rgb(0,95,186);
+    border-top: 1.34px solid #146cbe;
+    border-left: 1.34px solid #146cbe;
+    border-right: 1.34px solid #146cbe;
+    border-bottom: 1.34px solid #0F4E89;
+    box-shadow:0px 0.05px 0.05px #0F4E89; 
+    outline: none;
+    color:#FFFFFF;
+}
+
+.wui-button-style:hover {
+    background-color:rgb(25,110,192);
+    transition: 0.2;
+
+}
