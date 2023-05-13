@@ -6,14 +6,15 @@
     border-bottom: 1px solid rgb(204, 204, 204);
     box-shadow: 0 0 0 rgb(204, 204, 204);
     outline: none;
-    color:#1a1a1a;
-
+    color: #1a1a1a;
+    user-select: none;
 }
 
 .wui-button:hover {
-    background-color:#F6F6F6;
- /*transition: 0.2s;*/
+    background-color: #F6F6F6;
+    /*transition: 0.2s;*/
 }
+
 .wui-button:active {
     border-bottom: 1px solid rgb(229, 229, 229);
     color: #616161;
@@ -57,39 +58,54 @@
     box-shadow: 0 0 0 #0F4E89;
     outline: none;
     color: #FFFFFF;
+    user-select: none;
 }
 
 .wui-button-style:hover {
-    background-color:rgb(25,110,192);
-  /*transition: 0.2s;*/
+    background-color: rgb(25, 110, 192);
+    /*transition: 0.2s;*/
 
 }
 
-.wui-button-hyperlink{
-    background-color:#FFFFFF;
-    border:none;
+.wui-button-style:active {
+    background: #3184ca;
+    color: #a8e0ff;
+    /*transition: 0.2s;*/
+}
+
+.wui-button-hyperlink {
+    background-color: #FFFFFF;
+    border: none;
     outline: none;
-    color:rgb(0,63,149);
+    color: rgb(0, 63, 149);
     border-radius: 4px;
     margin: 2.667px 2.5px;
-    padding: 0px 15px 0px 15px;
-    height:30px;
-    font-size:14px;
+    padding: 0 15px 0 15px;
+    height: 30px;
+    font-size: 14px;
     cursor: pointer;
+    user-select: none;
 }
+
 .wui-button-hyperlink:hover {
-    background-color:#eaeaea;
- /*transition: 0.2s;*/
-
+    background-color: rgba(0, 0, 0, 0.07);
+    transition: 0.1s;
 }
 
-.wui-button-hyperlink-disabled{
-    color:#ADADAD;
+.wui-button-hyperlink:active {
+    background-color: rgba(0, 0, 0, 0.05);
+    color: #0067c0;
+    transition: 0.1s;
+}
+
+.wui-button-hyperlink.disabled {
+    color: #ADADAD;
     pointer-events: none;
 }
-.wui-button-disabled{
-    background-color:#F5F5F5;
-    color:#9D9D9D;
+
+.wui-button.disabled {
+    background-color: #F5F5F5;
+    color: #9D9D9D;
     pointer-events: none;
     border-top: 1.34px solid #E5E5E5;
     border-left: 1.34px solid #E5E5E5;
