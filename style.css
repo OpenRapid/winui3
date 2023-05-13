@@ -310,3 +310,32 @@ input:checked+.wui-button-switch-slider:before {
 .wui-button-switch-slider:before {
     border-radius: 50%;
 }
+
+.wui-button-toggle {
+
+    position: relative;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 4px;
+    height: 30px;
+    width:var(--width);
+    color:#1A1A1A;
+    font-size: 14px;
+    margin: 3px 3px;
+}
+
+.wui-button-toggle:checked{
+    color:#FFFFFF;
+    background-color: #196EC0;
+}
+
+.wui-button-toggle:before {
+    position: absolute;
+    content: attr(value);
+    height: 13px;
+    left:50%;
+    transform: translate(-50%,-50%);
+    top: 50%;
+}
+
