@@ -1,6 +1,4 @@
 /.history
 *.htaccess
 /phpMyAdmin*
-temp.*
-*.gpp
 /.idea
