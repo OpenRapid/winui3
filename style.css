@@ -45,7 +45,6 @@
     border-radius: 4px;
     margin: 3px 3px;
     padding: 3px 15px 3px 15px;
-
     font-size: 14px
 }
 
@@ -111,4 +110,245 @@
     border-left: 1.34px solid #E5E5E5;
     border-right: 1.34px solid #E5E5E5;
     border-bottom: 1.34px solid #E5E5E5;
+}
+
+.wui-button-check-box {
+    position: absolute;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    background: rgb(237, 237, 237);
+    border: 0.08rem solid rgb(133, 133, 133);
+    border-radius: 4px;
+}
+
+
+.wui-button-check-box:checked {
+    border: 0;
+    background: rgb(0, 95, 186);
+}
+
+.wui-button-check-box:checked::after {
+    content: '';
+    border: #FFF solid 2px;
+    height: 6px;
+    width: 10px;
+    top: 20%;
+    left: 20%;
+    border-top: none;
+    border-right: none;
+    position: absolute;
+    transform: rotate(-45deg);
+    opacity: 1;
+    animation: wuibox 0.1s 1;
+}
+
+.wui-button-check-box:checked:hover {
+    background: #196EC0;
+}
+
+.wui-button-check-box:checked:active {
+    background: rgb(49, 125, 197);
+}
+
+.wui-button-check-box:hover {
+    background: #E5E5E5;
+}
+
+.wui-button-check-box:active {
+    border: 0.08rem solid rgb(196, 196, 196);
+    background: rgb(220, 2);
+}
+
+
+
+.wui-button-radio-box {
+    position: relative;
+    margin: 3px 3px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    background: rgb(237, 237, 237);
+    border: 0.08rem solid rgb(133, 133, 133);
+    border-radius: 20px;
+}
+
+
+.wui-button-radio-box:checked {
+    border: 0;
+    background: rgb(0, 95, 186);
+}
+
+.wui-button-radio-box:checked::after {
+    content: '';
+    background: #FFFFFF;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    border-radius: 50%;
+    animation: wuibox 0.1s 1;
+}
+
+.wui-button-radio-box:checked:hover {
+    background: #196EC0;
+}
+
+.wui-button-radio-box:checked:active {
+    background: rgb(49, 125, 197);
+}
+
+.wui-button-radio-box:hover {
+    background: #E5E5E5;
+}
+
+.wui-button-radio-box:active {
+    border: 0.08rem solid rgb(196, 196, 196);
+    background: rgb(220, 2);
+}
+
+@keyframes wuibox {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+
+.wui-button-switch {
+    margin: 3px 3px;
+    position: relative;
+    display: inline-block;
+    width: 42px;
+    height: 21px;
+}
+
+.wui-button-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.wui-button-switch-slider:hover {
+    background: #E5E5E5;
+}
+
+.wui-button-switch-slider:active:before {
+    width: 15px
+}
+
+.wui-button-switch-slider:hover:before {
+
+    height: 14.5px;
+    width: 14.5px;
+
+}
+
+.wui-button-switch-slider {
+    border: 0.08rem solid rgb(133, 133, 133);
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(237, 237, 237);
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+
+.wui-button-switch-slider:before {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 13px;
+    left: 3px;
+    transform: translateY(-50%);
+    top: 50%;
+    background-color: #575757;
+    -webkit-transition: .2s;
+    transition: .2s;
+
+}
+
+input:checked+.wui-button-switch-slider {
+    border: 0;
+    background-color: rgb(0, 95, 186);
+}
+
+input:checked:hover+.wui-button-switch-slider {
+    background-color: #196EC0;
+}
+
+input:hover+.wui-button-switch-slider {
+    background-color: #E5E5E5
+}
+
+input:checked+.wui-button-switch-slider:before {
+    position: absolute;
+    transform: translateY(-50%);
+    left: 24px;
+    top: 50%;
+    background-color: #FFFFFF;
+}
+
+
+.wui-button-switch-slider {
+    border-radius: 34px;
+}
+
+.wui-button-switch-slider:before {
+    border-radius: 50%;
+}
+
+.wui-button-toggle {
+
+    position: relative;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 4px;
+    height: 30px;
+    width:var(--width);
+    color:#1A1A1A;
+    font-size: 14px;
+    margin: 3px 3px;
+}
+
+.wui-button-toggle:checked{
+    color:#FFFFFF;
+    background-color: #196EC0;
+    border: 0;
+}
+
+.wui-button-toggle:before {
+    position: absolute;
+    content: attr(value);
+    height: 13px;
+    left:50%;
+    transform: translate(-50%,-50%);
+    top: 50%;
+}
+
+.wui-button-toggle:checked:hover {
+    background-color: rgb(25, 110, 192);
+    /*transition: 0.2s;*/
+
+}
+
+.wui-button-toggle:checked:active {
+    background: #3184ca;
+    color: #a8e0ff;
+    /*transition: 0.2s;*/
 }
