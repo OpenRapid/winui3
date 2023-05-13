@@ -45,7 +45,6 @@
     border-radius: 4px;
     margin: 3px 3px;
     padding: 3px 15px 3px 15px;
-
     font-size: 14px
 }
 
@@ -121,30 +120,30 @@
     cursor: pointer;
     width: 20px;
     height: 20px;
-    background: rgb(237,237,237);
-    border: 0.08rem solid rgb(133,133,133);
+    background: rgb(237, 237, 237);
+    border: 0.08rem solid rgb(133, 133, 133);
     border-radius: 4px;
 }
 
 
 .wui-button-check-box:checked {
     border: 0;
-    background: rgb(0,95,186);
+    background: rgb(0, 95, 186);
 }
 
 .wui-button-check-box:checked::after {
     content: '';
+    border: #FFF solid 2px;
     height: 6px;
     width: 10px;
-    border: #FFF solid 2px;
-    position: absolute;
-    top:20%;
+    top: 20%;
     left: 20%;
     border-top: none;
     border-right: none;
+    position: absolute;
     transform: rotate(-45deg);
     opacity: 1;
-    animation:wuibox 0.1s 1;
+    animation: wuibox 0.1s 1;
 }
 
 .wui-button-check-box:checked:hover {
@@ -152,20 +151,76 @@
 }
 
 .wui-button-check-box:checked:active {
-    background: rgb(49,125,197);
+    background: rgb(49, 125, 197);
 }
 
 .wui-button-check-box:hover {
-    background:#E5E5E5;
+    background: #E5E5E5;
 }
 
 .wui-button-check-box:active {
-    border: 0.08rem solid rgb(196,196,196);
-    background:rgb(220,2);
+    border: 0.08rem solid rgb(196, 196, 196);
+    background: rgb(220, 2);
 }
 
-@keyframes wuibox{
-    0%{opacity: 0;}
-    100%{opacity: 1;}
 
- }
+
+.wui-button-radio-box {
+    position: relative;
+    margin: 3px 3px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    background: rgb(237, 237, 237);
+    border: 0.08rem solid rgb(133, 133, 133);
+    border-radius: 20px;
+}
+
+
+.wui-button-radio-box:checked {
+    border: 0;
+    background: rgb(0, 95, 186);
+}
+
+.wui-button-radio-box:checked::after {
+    content: '';
+    background: #FFFFFF;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    border-radius: 50%;
+    animation: wuibox 0.1s 1;
+}
+
+.wui-button-radio-box:checked:hover {
+    background: #196EC0;
+}
+
+.wui-button-radio-box:checked:active {
+    background: rgb(49, 125, 197);
+}
+
+.wui-button-radio-box:hover {
+    background: #E5E5E5;
+}
+
+.wui-button-radio-box:active {
+    border: 0.08rem solid rgb(196, 196, 196);
+    background: rgb(220, 2);
+}
+
+@keyframes wuibox {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
