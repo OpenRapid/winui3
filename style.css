@@ -1,3 +1,17 @@
+@font-face {
+    font-family: "Segoe UI File";
+    src: url("./font/segoeui.ttf");
+}
+
+@font-face {
+    font-family: "Segoe Fluent Icons File";
+    src: url("./font/SegoeIcons.ttf");
+}
+
+* {
+    font-family: "Segoe UI", "Segoe UI File", serif ;
+}
+
 .wui-button {
     background-color: rgb(251, 251, 251);
     border-top: 1px solid rgb(229, 229, 229);
@@ -49,7 +63,7 @@
 }
 
 .wui-button-style {
-    background-color: rgb(0, 95, 186);
+    background-color: #005fba;
     border-top: 1px solid #146cbe;
     border-left: 1px solid #146cbe;
     border-right: 1px solid #146cbe;
@@ -61,7 +75,7 @@
 }
 
 .wui-button-style:hover {
-    background-color: rgb(25, 110, 192);
+    background-color: #196ec0;
     /*transition: 0.2s;*/
 
 }
@@ -76,7 +90,7 @@
     background-color: #FFFFFF;
     border: none;
     outline: none;
-    color: rgb(0, 63, 149);
+    color: #003f95;
     border-radius: 4px;
     margin: 2.667px 2.5px;
     padding: 0 15px 0 15px;
@@ -118,8 +132,8 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     cursor: pointer;
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;
     background: rgb(237, 237, 237);
     border: 0.08rem solid rgb(133, 133, 133);
     border-radius: 4px;
@@ -132,16 +146,18 @@
 }
 
 .wui-button-check-box:checked::after {
-    content: '';
-    border: #FFF solid 2px;
+    font-family: "Segoe Fluent Icons", "Segoe Fluent Icons File", serif ;
+    content: '';
+    font-weight: 600;
+    color: #FFFFFF;
+    transform: scale(0.7);
     height: 6px;
     width: 10px;
-    top: 20%;
+    top: 25%;
     left: 20%;
     border-top: none;
     border-right: none;
     position: absolute;
-    transform: rotate(-45deg);
     opacity: 1;
     animation: wuibox 0.1s 1;
 }
@@ -160,7 +176,7 @@
 
 .wui-button-check-box:active {
     border: 0.08rem solid rgb(196, 196, 196);
-    background: rgb(220, 2);
+    background: #3183ca;
 }
 
 
@@ -244,8 +260,8 @@
     background: #E5E5E5;
 }
 
-.wui-button-switch-slider:active:before {
-    width: 15px
+.wui-button-switch:active .wui-button-switch-slider:before {
+    width: 16px
 }
 
 .wui-button-switch-slider:hover:before {
@@ -328,11 +344,12 @@ input:checked+.wui-button-switch-slider:before {
 
 .wui-button-toggle:checked{
     color:#FFFFFF;
-    background-color: #196EC0;
+    background-color: #005fba;
     border: 0;
 }
 
 .wui-button-toggle:before {
+    line-height: 12px;
     position: absolute;
     content: attr(value);
     height: 13px;
@@ -342,13 +359,20 @@ input:checked+.wui-button-switch-slider:before {
 }
 
 .wui-button-toggle:checked:hover {
-    background-color: rgb(25, 110, 192);
+    background-color: #196ec0;
     /*transition: 0.2s;*/
 
 }
 
-.wui-button-toggle:checked:active {
+.wui-button-toggle.wui-button:checked:hover {
+    background-color: #196ec0;
+    /*transition: 0.2s;*/
+
+}
+
+.wui-button-toggle.wui-button:checked:active {
     background: #3184ca;
     color: #a8e0ff;
     /*transition: 0.2s;*/
+
 }
