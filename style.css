@@ -500,7 +500,7 @@ li {
     width: 4px;
     top:50%;
     transform: translateY(-50%);
-    left:4px;
+    left:-1.5px;
     background-color: #005FBA;
     animation: wuibox 0.3s 1;
 
