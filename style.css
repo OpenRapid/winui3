@@ -518,3 +518,6 @@ li {
     animation: wuicenter 0.3s 1;
 
 }
+.wui-icon {
+    font-family: "Segoe Fluent Icons", "Segoe Fluent Icons File", serif ;
+}
