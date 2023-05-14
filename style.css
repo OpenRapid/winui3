@@ -378,11 +378,13 @@ input:checked+.wui-button-switch-slider:before {
 }
 
 
-
+.wui-icon {
+    font-family: "Segoe Fluent Icons", "Segoe Fluent Icons File", serif;
+}
 
 .wui-button-select {
 
-    font-family: "Segoe UI", "Segoe UI File", serif;
+    font-family: "Microsoft YaHei" ,"Segoe UI", "Segoe UI File", serif;
     display: inline-block;
     background-color: rgb(251, 251, 251);
     border-top: 1px solid rgb(229, 229, 229);
@@ -431,7 +433,7 @@ input:checked+.wui-button-switch-slider:before {
 }
 
 .wui-button-select select {
-    font-family: "Segoe UI", "Segoe UI File", serif;
+    font-family: "Microsoft YaHei" ,"Segoe UI", "Segoe UI File", serif;
     cursor: pointer;
     position: relative;
     left: 45%;
@@ -453,7 +455,7 @@ input:checked+.wui-button-switch-slider:before {
 }
 
 .wui-button-select select option {
-    font-family: "Segoe UI", "Segoe UI File", serif;
+    font-family: "Microsoft YaHei" ,"Segoe UI", "Segoe UI File", serif;
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -462,7 +464,7 @@ input:checked+.wui-button-switch-slider:before {
 ul,
 ol,
 li {
-    font-family: "Segoe UI", "Segoe UI File", serif;
+    font-family: "Microsoft YaHei" ,"Segoe UI", "Segoe UI File", serif;
     margin: 0px;
     padding: 0px;
 }
