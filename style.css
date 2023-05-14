@@ -479,6 +479,7 @@ li {
 }
 
 .wui-button-list li{
+    position: relative;
     border-radius: 5px;
     padding: 10px 15px 10px 15px;
     font-size: 14px
@@ -497,7 +498,8 @@ li {
     height: 20px;
     border-radius: 4px;
     width: 4px;
-    
+    top:50%;
+    transform: translateY(-50%);
     left:4px;
     background-color: #005FBA;
     animation: wuibox 0.3s 1;
