@@ -492,6 +492,17 @@ li {
 .wui-button-list-click li:focus {
     background-color: #EDEDED;
 }
+@keyframes wuicenter {
+    0% {
+        height:5px
+    }
+
+    100% {
+        height: 20px;
+    }
+
+}
+
 .wui-button-list-click li:focus::before{
     position: absolute;
     content: "";
@@ -502,6 +513,7 @@ li {
     transform: translateY(-50%);
     left:-1.5px;
     background-color: #005FBA;
-    animation: wuibox 0.3s 1;
+    animation: wuicenter 0.3s 1;
 
 }
+
