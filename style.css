@@ -9,7 +9,7 @@
 }
 
 * {
-    font-family: "Segoe UI", "Segoe UI File", serif ;
+    font-family: "Microsoft YaHei", 微软雅黑,"Segoe UI", "Segoe UI File", serif;
 }
 
 .wui-button {
@@ -17,7 +17,7 @@
     border-top: 1px solid rgb(229, 229, 229);
     border-left: 1px solid rgb(229, 229, 229);
     border-right: 1px solid rgb(229, 229, 229);
-    border-bottom: 1px solid rgb(204, 204, 204);
+    border-bottom: 1.3px solid rgb(204, 204, 204);
     box-shadow: 0 0 0 rgb(204, 204, 204);
     outline: none;
     color: #1a1a1a;
@@ -146,7 +146,7 @@
 }
 
 .wui-button-check-box:checked::after {
-    font-family: "Segoe Fluent Icons", "Segoe Fluent Icons File", serif ;
+    font-family: "Segoe Fluent Icons", "Segoe Fluent Icons File", serif;
     content: '';
     font-weight: 600;
     color: #FFFFFF;
@@ -342,14 +342,14 @@ input:checked+.wui-button-switch-slider:before {
     -moz-appearance: none;
     border-radius: 4px;
     height: 30px;
-    width:var(--width);
-    color:#1A1A1A;
+    width: var(--width);
+    color: #1A1A1A;
     font-size: 14px;
     margin: 3px 3px;
 }
 
-.wui-button-toggle:checked{
-    color:#FFFFFF;
+.wui-button-toggle:checked {
+    color: #FFFFFF;
     background-color: #005fba;
     border: 0;
 }
@@ -359,8 +359,8 @@ input:checked+.wui-button-switch-slider:before {
     position: absolute;
     content: attr(value);
     height: 13px;
-    left:50%;
-    transform: translate(-50%,-50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
     top: 50%;
 }
 
@@ -385,4 +385,128 @@ input:checked+.wui-button-switch-slider:before {
 
 .wui-icon {
     font-family: "Segoe Fluent Icons", "Segoe Fluent Icons File", serif ;
+
+.wui-button-select {
+
+    font-family: "Microsoft YaHei", 微软雅黑;
+    display: inline-block;
+    background-color: rgb(251, 251, 251);
+    border-top: 1px solid rgb(229, 229, 229);
+    border-left: 1px solid rgb(229, 229, 229);
+    border-right: 1px solid rgb(229, 229, 229);
+    border-bottom: 1.3px solid rgb(204, 204, 204);
+    box-shadow: 0 0 0 rgb(204, 204, 204);
+    outline: none;
+    color: #1a1a1a;
+    user-select: none;
+    border-radius: 4px;
+
+    height: 30px;
+    font-size: 14px;
+    margin: 3px 3px;
+}
+
+.wui-button-select:hover,
+.wui-button-select select option {
+    background-color: #F6F6F6;
+    /*transition: 0.2s;*/
+}
+
+.wui-button-select:active {
+    border-bottom: 1px solid rgb(229, 229, 229);
+    color: #616161;
+    /*transition: 0.2s;*/
+}
+
+.wui-button-select:before {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-family: "Segoe Fluent Icons", "Segoe Fluent Icons File", serif;
+    content: "";
+    position: relative;
+    width: 0;
+    height: 0;
+
+    border-top-color: #000;
+    left: 77%;
+    transform: translate(-50%, -50%);
+    top: 25%;
+    cursor: pointer;
+
+}
+
+.wui-button-select select {
+    font-family: "Microsoft YaHei", 微软雅黑;
+    cursor: pointer;
+    position: relative;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    top: -13%;
+    width: 100%;
+    padding: 0 15px 0 15px;
+    height: 100%;
+    border: none;
+    background: transparent;
+    background-image: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.wui-button-select select:focus {
+    outline: none;
+}
+
+.wui-button-select select option {
+    font-family: "Microsoft YaHei", 微软雅黑;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+ul,
+ol,
+li {
+    font-family: "Microsoft YaHei", 微软雅黑;
+    margin: 0px;
+    padding: 0px;
+}
+
+.wui-button-list {
+    position: relative;
+    background-color: rgb(243,243,243);
+    list-style-type: none;
+    width: fit-content;
+    border-radius: 4px;
+    margin: 2px;
+    padding: 3px 5px 3px 5px ;
+    font-size: 14px
+}
+
+.wui-button-list li{
+    position: relative;
+    border-radius: 5px;
+    padding: 10px 15px 10px 15px;
+    font-size: 14px
+}
+
+.wui-button-list li:hover {
+    background-color: #EAEAEA;
+}
+
+.wui-button-list-click li:focus {
+    background-color: #EDEDED;
+}
+.wui-button-list-click li:focus::before{
+    position: absolute;
+    content: "";
+    height: 20px;
+    border-radius: 4px;
+    width: 4px;
+    top:50%;
+    transform: translateY(-50%);
+    left:-1.5px;
+    background-color: #005FBA;
+    animation: wuibox 0.3s 1;
 }
