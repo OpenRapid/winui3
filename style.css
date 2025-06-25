@@ -514,8 +514,8 @@ li {
     }
 
     100% {
-        width: 20px;
-        left: calc(50% - 12px);
+        width: 16px;
+        left: calc(50% - 10px);
     }
 
 }
@@ -557,12 +557,12 @@ label.wui-selector-bar.wui-list-click input[type="radio"]:checked::before {
     display: block;
     position: absolute;
     content: "";
-    height: 4px;
+    height: 3px;
     border-radius: 4px;
-    width: 20px;
+    width: 16px;
     top: 115%;
     transform: translateY(-50%);
-    left: calc(50% - 12px);
+    left: calc(50% - 10px);
     background-color: #005FBA;
     animation: wui-w-center 0.3s 1;
 }
