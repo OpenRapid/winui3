@@ -9,7 +9,7 @@
 }
 
 * {
-    font-family: "Microsoft YaHei", 微软雅黑,"Segoe UI", "Segoe UI File", serif;
+    font-family: "Microsoft YaHei", 微软雅黑, "Segoe UI", "Segoe UI File", serif;
 }
 
 .wui-button {
@@ -384,7 +384,7 @@ input:checked+.wui-button-switch-slider:before {
 
 .wui-list-select {
 
-    font-family: "Microsoft YaHei" ,"Segoe UI", "Segoe UI File", serif;
+    font-family: "Microsoft YaHei", "Segoe UI", "Segoe UI File", serif;
     display: inline-block;
     background-color: rgb(251, 251, 251);
     border-top: 1px solid rgb(229, 229, 229);
@@ -433,7 +433,7 @@ input:checked+.wui-button-switch-slider:before {
 }
 
 .wui-list-select select {
-    font-family: "Microsoft YaHei" ,"Segoe UI", "Segoe UI File", serif;
+    font-family: "Microsoft YaHei", "Segoe UI", "Segoe UI File", serif;
     cursor: pointer;
     position: relative;
     left: 45%;
@@ -455,7 +455,7 @@ input:checked+.wui-button-switch-slider:before {
 }
 
 .wui-list-select select option {
-    font-family: "Microsoft YaHei" ,"Segoe UI", "Segoe UI File", serif;
+    font-family: "Microsoft YaHei", "Segoe UI", "Segoe UI File", serif;
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -464,27 +464,28 @@ input:checked+.wui-button-switch-slider:before {
 ul,
 ol,
 li {
-    font-family: "Microsoft YaHei" ,"Segoe UI", "Segoe UI File", serif;
+    font-family: "Microsoft YaHei", "Segoe UI", "Segoe UI File", serif;
     margin: 0px;
     padding: 0px;
 }
 
 .wui-list {
     position: relative;
-    background-color: rgb(243,243,243);
+    background-color: rgb(243, 243, 243);
     list-style-type: none;
     width: fit-content;
     border-radius: 4px;
     margin: 2px;
-    padding: 3px 5px 3px 5px ;
+    padding: 3px 5px 3px 5px;
     font-size: 14px
 }
 
-.wui-list li{
+.wui-list li {
     position: relative;
     border-radius: 5px;
     padding: 10px 15px 10px 15px;
-    font-size: 14px
+    font-size: 14px;
+    cursor: default;
 }
 
 .wui-list li:hover {
@@ -494,9 +495,10 @@ li {
 .wui-list-click li:focus {
     background-color: #EDEDED;
 }
-@keyframes wuicenter {
+
+@keyframes wui-h-center {
     0% {
-        height:5px
+        height: 5px
     }
 
     100% {
@@ -505,19 +507,66 @@ li {
 
 }
 
-.wui-list-click li:focus::before{
+@keyframes wui-w-center {
+    0% {
+        width: 5px;
+        left: calc(50% - 4.5px);
+    }
+
+    100% {
+        width: 20px;
+        left: calc(50% - 12px);
+    }
+
+}
+
+.wui-list-click li:focus::before {
     position: absolute;
     content: "";
     height: 20px;
     border-radius: 4px;
     width: 4px;
-    top:50%;
+    top: 50%;
     transform: translateY(-50%);
-    left:-1.5px;
+    left: -1.5px;
     background-color: #005FBA;
-    animation: wuicenter 0.3s 1;
-
+    animation: wui-h-center 0.3s 1;
 }
+
+.wui-list.wui-selector-bar {
+    display: inline-block;
+    background: none;
+}
+
+label.wui-selector-bar.wui-list-click input[type="radio"] {
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+}
+
+label.wui-selector-bar.wui-list-click:hover {
+    color: #5c5c5c;
+}
+
+label.wui-selector-bar.wui-list-click:active {
+    color: #868686;
+}
+
+label.wui-selector-bar.wui-list-click input[type="radio"]:checked::before {
+    display: block;
+    position: absolute;
+    content: "";
+    height: 4px;
+    border-radius: 4px;
+    width: 20px;
+    top: 115%;
+    transform: translateY(-50%);
+    left: calc(50% - 12px);
+    background-color: #005FBA;
+    animation: wui-w-center 0.3s 1;
+}
+
 .wui-icon {
-    font-family: "Segoe Fluent Icons", "Segoe Fluent Icons File", serif ;
+    font-family: "Segoe Fluent Icons", "Segoe Fluent Icons File", serif;
 }
